@@ -18,5 +18,6 @@
 @interface MainViewController : UITableViewController
 
 @property UISegmentedControl *appointmentTypePicker;
+@property UIImageView *qrImageView;
 
 @end

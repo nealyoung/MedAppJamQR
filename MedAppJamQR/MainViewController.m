@@ -33,12 +33,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIImage *qr = [QRCodeGenerator qrImageForString:@"Sample Text" imageSize:512.0f];
-    UIImageView *qrView = [[UIImageView alloc] initWithImage:qr];
-    qrView.frame = CGRectMake(0.0f, 0.0f, 512.0f, 512.0f);
-    qrView.center = CGPointMake(CGRectGetWidth([UIScreen mainScreen].bounds) / 2.0f, CGRectGetHeight([UIScreen mainScreen].bounds) / 2.0f);
-    qrView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
-    [self.view addSubview:qrView];
+    UIImage *qrImage = [QRCodeGenerator qrImageForString:@"Sample Text" imageSize:512.0f];
+    self.qrImageView = [[UIImageView alloc] initWithImage:qrImage];
+    self.qrImageView.frame = CGRectMake(0.0f, 0.0f, 512.0f, 512.0f);
+    self.qrImageView.center = CGPointMake(CGRectGetWidth([UIScreen mainScreen].bounds) / 2.0f, CGRectGetHeight([UIScreen mainScreen].bounds) / 2.0f);
+    self.qrImageView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
+    [self.view addSubview:self.qrImageView];
 
     UIButton *submitButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [submitButton setTitle:@"Submit" forState:UIControlStateNormal];
@@ -56,8 +56,7 @@
     self.navigationItem.titleView = self.appointmentTypePicker;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -67,7 +66,8 @@
 }
 
 - (void)submitButtonPressed {
-    NSLog(@"Submit button pressed");
+    TextFieldCell *cell = (TextFieldCell *)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    self.qrImageView.image = [QRCodeGenerator qrImageForString:cell.textField.text imageSize:512.0f];
 }
 
 #pragma mark - UITableViewDataSource
