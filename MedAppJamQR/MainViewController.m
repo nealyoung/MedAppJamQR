@@ -54,6 +54,13 @@
     [self.appointmentTypePicker sizeToFit];
     [self.appointmentTypePicker addTarget:self action:@selector(appointmentTypeChanged) forControlEvents:UIControlEventValueChanged];
     self.navigationItem.titleView = self.appointmentTypePicker;
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterLongStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterLongStyle];
+    
+    NSLog(@"%@", [dateFormatter stringFromDate:date]);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,9 +72,26 @@
     NSLog(@"%d", self.appointmentTypePicker.selectedSegmentIndex);
 }
 
+/*
+ Format for QR code:
+ 
+ {
+ "EventType" : Integer EventType value,
+ "Date" : Date and time of appointment, in a string formatted with NSDateFormatterLongStyle
+ "Location" : "Medical Clinic\n123 Main St.\nIrvine, CA 92617"
+ "TreatmentID" : Integer index to array of treatments for specified event type
+ }
+ */
 - (void)submitButtonPressed {
-    TextFieldCell *cell = (TextFieldCell *)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-    self.qrImageView.image = [QRCodeGenerator qrImageForString:cell.textField.text imageSize:512.0f];
+    //`TextFieldCell *cell = (TextFieldCell *)[self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    //self.qrImageView.image = [QRCodeGenerator qrImageForString:cell.textField.text imageSize:512.0f];
+    
+    NSString *json = @"{ \"EventType\"   : 2,\
+                         \"TreatmentID\" : 0,\
+                         \"Date\"        : \"November 27, 2013 at 3:47:27 PM PST\",\
+                         \"Location\"    : \"OC Oncology\\n123 Fake St. South\\nOrange, CA 98888\" }";
+    
+    self.qrImageView.image = [QRCodeGenerator qrImageForString:json imageSize:512.0f];
 }
 
 #pragma mark - UITableViewDataSource
