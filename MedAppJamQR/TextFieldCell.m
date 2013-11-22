@@ -8,6 +8,8 @@
 
 #import "TextFieldCell.h"
 
+#import "UIFont+Application.h"
+
 @implementation TextFieldCell
 
 - (id)init {
@@ -23,11 +25,11 @@
         self.label = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, 90, 40)];
         self.label.textColor = [UIColor darkGrayColor];
         self.label.backgroundColor = [UIColor clearColor];
-        self.label.font = [UIFont systemFontOfSize:14];
+        self.textLabel.font = [UIFont mediumApplicationFontOfSize:16.0f];
         [self.contentView addSubview:self.label];
         
         self.textField = [[UITextField alloc] initWithFrame:CGRectMake(120, 10, 620, self.contentView.frame.size.height - 20)];
-        self.textField.font = [UIFont systemFontOfSize:16];
+        self.textField.font = [UIFont applicationFontOfSize:16.0f];
         self.textField.placeholder = @"Text Field";
         self.textField.textColor = [UIColor darkGrayColor];
         self.textField.textAlignment = NSTextAlignmentRight;

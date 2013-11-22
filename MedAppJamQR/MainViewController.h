@@ -8,16 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-#define APPOINTMENT_TYPE_SURGERY 0
-#define APPOINTMENT_TYPE_IMAGING 1
-#define APPOINTMENT_TYPE_LAB_TEST 2
-#define APPOINTMENT_TYPE_ONCOLOGIST 3
-#define APPOINTMENT_TYPE_CHEMO 4
-#define APPOINTMENT_TYPE_RADIATION 5
+#import "Event.h"
 
 @interface MainViewController : UITableViewController
 
 @property UISegmentedControl *appointmentTypePicker;
-@property UIImageView *qrImageView;
+
+- (void)setSelectedTreatmentName:(NSString *)name id:(NSInteger)treatmentID typeName:(EventType)treatmentType;
 
 @end

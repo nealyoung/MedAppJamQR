@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E150711183C971500F21A1D /* DatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E150710183C971500F21A1D /* DatePickerCell.m */; };
+		0E150715183D456B00F21A1D /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E150714183D456B00F21A1D /* CategoriesViewController.m */; };
+		0E150731183EFBFC00F21A1D /* TreatmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E150730183EFBFC00F21A1D /* TreatmentsViewController.m */; };
 		0E35ACC618395DA20008FC66 /* ChemoEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E35ACC118395DA20008FC66 /* ChemoEvent.m */; };
 		0E35ACC718395DA20008FC66 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E35ACC318395DA20008FC66 /* Event.m */; };
 		0E35ACC818395DA20008FC66 /* LabTestEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E35ACC518395DA20008FC66 /* LabTestEvent.m */; };
 		0E35ACCB18395DAD0008FC66 /* SurgeryEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E35ACCA18395DAD0008FC66 /* SurgeryEvent.m */; };
-		0E35ACCD183961300008FC66 /* TreatmentData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E35ACCC183961300008FC66 /* TreatmentData.plist */; };
 		0E5B124A1831E6A800C1AA0A /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B12491831E6A800C1AA0A /* QRCodeGenerator.m */; };
 		0E5B125A1831E6BB00C1AA0A /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B124C1831E6BB00C1AA0A /* bitstream.c */; };
 		0E5B125B1831E6BB00C1AA0A /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B124E1831E6BB00C1AA0A /* mask.c */; };
@@ -35,6 +37,7 @@
 		0E94672E1831AFD400F28FFE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E94672D1831AFD400F28FFE /* MainViewController.m */; };
 		0E9467311831B03100F28FFE /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9467301831B03100F28FFE /* TextFieldCell.m */; };
 		0E9467341831B05F00F28FFE /* UIFont+Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9467331831B05F00F28FFE /* UIFont+Application.m */; };
+		0EA79FDC183FB8CD00304028 /* TreatmentData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EA79FDB183FB8CD00304028 /* TreatmentData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E15070F183C971500F21A1D /* DatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatePickerCell.h; path = MedAppJamQR/DatePickerCell.h; sourceTree = SOURCE_ROOT; };
+		0E150710183C971500F21A1D /* DatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatePickerCell.m; path = MedAppJamQR/DatePickerCell.m; sourceTree = SOURCE_ROOT; };
+		0E150713183D456B00F21A1D /* CategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesViewController.h; sourceTree = "<group>"; };
+		0E150714183D456B00F21A1D /* CategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesViewController.m; sourceTree = "<group>"; };
+		0E15072F183EFBFC00F21A1D /* TreatmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentsViewController.h; sourceTree = "<group>"; };
+		0E150730183EFBFC00F21A1D /* TreatmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentsViewController.m; sourceTree = "<group>"; };
 		0E35ACC018395DA20008FC66 /* ChemoEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChemoEvent.h; sourceTree = "<group>"; };
 		0E35ACC118395DA20008FC66 /* ChemoEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChemoEvent.m; sourceTree = "<group>"; };
 		0E35ACC218395DA20008FC66 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
@@ -56,7 +65,6 @@
 		0E35ACC518395DA20008FC66 /* LabTestEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabTestEvent.m; sourceTree = "<group>"; };
 		0E35ACC918395DAD0008FC66 /* SurgeryEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurgeryEvent.h; sourceTree = "<group>"; };
 		0E35ACCA18395DAD0008FC66 /* SurgeryEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurgeryEvent.m; sourceTree = "<group>"; };
-		0E35ACCC183961300008FC66 /* TreatmentData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TreatmentData.plist; sourceTree = "<group>"; };
 		0E5B12481831E6A800C1AA0A /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
 		0E5B12491831E6A800C1AA0A /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
 		0E5B124C1831E6BB00C1AA0A /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
@@ -95,6 +103,7 @@
 		0E9467301831B03100F28FFE /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
 		0E9467321831B05F00F28FFE /* UIFont+Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Application.h"; sourceTree = "<group>"; };
 		0E9467331831B05F00F28FFE /* UIFont+Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Application.m"; sourceTree = "<group>"; };
+		0EA79FDB183FB8CD00304028 /* TreatmentData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TreatmentData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +133,8 @@
 		0E35ACCE1839730E0008FC66 /* Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0E15070F183C971500F21A1D /* DatePickerCell.h */,
+				0E150710183C971500F21A1D /* DatePickerCell.m */,
 				0E94672F1831B03100F28FFE /* TextFieldCell.h */,
 				0E9467301831B03100F28FFE /* TextFieldCell.m */,
 			);
@@ -150,6 +161,10 @@
 			children = (
 				0E94672C1831AFD400F28FFE /* MainViewController.h */,
 				0E94672D1831AFD400F28FFE /* MainViewController.m */,
+				0E150713183D456B00F21A1D /* CategoriesViewController.h */,
+				0E150714183D456B00F21A1D /* CategoriesViewController.m */,
+				0E15072F183EFBFC00F21A1D /* TreatmentsViewController.h */,
+				0E150730183EFBFC00F21A1D /* TreatmentsViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -235,7 +250,7 @@
 		0E9466FD1831AF6600F28FFE /* MedAppJamQR */ = {
 			isa = PBXGroup;
 			children = (
-				0E35ACCC183961300008FC66 /* TreatmentData.plist */,
+				0EA79FDB183FB8CD00304028 /* TreatmentData.plist */,
 				0E9467061831AF6600F28FFE /* AppDelegate.h */,
 				0E9467071831AF6600F28FFE /* AppDelegate.m */,
 				0E35ACD11839732D0008FC66 /* Class Extensions */,
@@ -355,7 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E9467101831AF6600F28FFE /* Images.xcassets in Resources */,
-				0E35ACCD183961300008FC66 /* TreatmentData.plist in Resources */,
+				0EA79FDC183FB8CD00304028 /* TreatmentData.plist in Resources */,
 				0E9467021831AF6600F28FFE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,8 +399,11 @@
 				0E9467041831AF6600F28FFE /* main.m in Sources */,
 				0E5B125E1831E6BB00C1AA0A /* qrspec.c in Sources */,
 				0E35ACC618395DA20008FC66 /* ChemoEvent.m in Sources */,
+				0E150715183D456B00F21A1D /* CategoriesViewController.m in Sources */,
 				0E5B125B1831E6BB00C1AA0A /* mask.c in Sources */,
+				0E150731183EFBFC00F21A1D /* TreatmentsViewController.m in Sources */,
 				0E5B125A1831E6BB00C1AA0A /* bitstream.c in Sources */,
+				0E150711183C971500F21A1D /* DatePickerCell.m in Sources */,
 				0E35ACC818395DA20008FC66 /* LabTestEvent.m in Sources */,
 				0E94672E1831AFD400F28FFE /* MainViewController.m in Sources */,
 				0E5B125D1831E6BB00C1AA0A /* qrinput.c in Sources */,
